@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Tracer - Buy & Sell Fresh Dairy Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+       
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo" onclick="navigateTo('home')">
+                    <i class="fas fa-tractor"></i>
+                    <span>Dairy Tracer</span>
+                </div>
+                <div class="nav-links" id="navLinks">
+    <a href="#" onclick="navigateTo('home')">Home</a>
+    <a href="#" onclick="navigateTo('products')">Products</a>
+    <a href="#" id="cartLink" onclick="navigateTo('cart')" style="display: none;">
+        Cart <span id="cartCount" class="cart-badge">0</span>
+    </a>
+    <a href="#" id="sellLink" onclick="navigateTo('sell')" style="display: none;">Sell</a>
+    <a href="#" id="myProductsLink" onclick="navigateTo('my-products')" style="display: none;">My Products</a>  
+    <a href="#" id="ordersLink" onclick="navigateTo('orders')" style="display: none;">Orders</a>
+    <a href="#" id="dashboardLink" onclick="navigateTo('dashboard')" style="display: none;">Dashboard</a>
+    <a href="#" id="adminLink" onclick="navigateTo('admin')" style="display: none;">Admin Panel</a> 
+    <a href="#" id="loginLink" onclick="navigateTo('login')">Login</a>
+    <a href="#" id="registerLink" onclick="navigateTo('register')">Register</a>
+    <a href="#" id="logoutLink" onclick="logout()" style="display: none;">Logout</a>
+</div>
+                <div class="mobile-menu" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+       
+        <main id="mainContent"></main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dairy Tracer</h3>
+                    <p>Your trusted partner for fresh dairy products</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#" onclick="navigateTo('home')">Home</a>
+                    <a href="#" onclick="navigateTo('products')">Products</a>
+                    <a href="#" onclick="navigateTo('sell')">Sell Products</a>
+                    <a href="#" onclick="navigateTo('orders')">My Orders</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> support@dairytracer.com</p>
+                    <p><i class="fas fa-phone"></i> +91 9999999999</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Shegaon, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dairy Tracer. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
